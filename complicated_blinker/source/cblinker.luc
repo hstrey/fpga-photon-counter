@@ -1,0 +1,22 @@
+module cblinker #(
+    TOP = 49999999  : TOP > 0 // max value   
+  )(
+    input clk,  // clock
+    input rst,  // reset
+    output out
+  ){
+  .clk(clk),.rst(rst) {
+    dff counter[$clog2(TOP)];
+    dff pulse[1];
+  }
+  
+  always {
+    pulse.d = 0;
+    out = pulse.q;
+    counter.d = counter.q +1;
+    if (counter.q == TOP) {
+        counter.d = 0;
+        pulse.d = 1;
+      }
+  }
+}
