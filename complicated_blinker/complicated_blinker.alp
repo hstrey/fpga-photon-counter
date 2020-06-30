@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="complicated_blinker" board="Alchitry Au" language="Lucid" version="2">
   <files>
+    <component>edge_detector.luc</component>
+    <component>counter.luc</component>
     <src>cblinker.luc</src>
     <component>reset_conditioner.luc</component>
     <src top="true">au_top.luc</src>
-    <component>edge_detector.luc</component>
-    <component>counter.luc</component>
-    <constraint lib="true">au.xdc</constraint>
     <constraint lib="true">alchitry.acf</constraint>
+    <constraint lib="true">au.xdc</constraint>
   </files>
 </project>

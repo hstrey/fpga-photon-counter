@@ -3,7 +3,7 @@
 // clock cycles.  I will use this to create a photon counter
 // that counts edge up events of an external pin between two pulses
 ////////////////////////////////////////////////////////////////////
-module cblinker #(
+module timer #(
     TOP = 49999999  : TOP > 0 // max value   
   )(
     input clk,  // clock
