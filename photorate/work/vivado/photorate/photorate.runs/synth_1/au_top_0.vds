@@ -2,8 +2,8 @@
 # Vivado v2019.2.1 (64-bit)
 # SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
 # IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
-# Start of session at: Mon Jun 29 17:04:16 2020
-# Process ID: 129309
+# Start of session at: Wed Jul  1 21:11:22 2020
+# Process ID: 868
 # Current directory: /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.runs/synth_1
 # Command line: vivado -log au_top_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source au_top_0.tcl
 # Log file: /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.runs/synth_1/au_top_0.vds
@@ -16,9 +16,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tftg256-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 129330 
+INFO: Helper process launched with PID 889 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1873.359 ; gain = 202.715 ; free physical = 119303 ; free virtual = 125206
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1873.355 ; gain = 202.715 ; free physical = 118637 ; free virtual = 124696
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'au_top_0' [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/au_top_0.v:7]
 INFO: [Synth 8-6157] synthesizing module 'reset_conditioner_1' [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/reset_conditioner_1.v:11]
@@ -28,31 +28,40 @@ INFO: [Synth 8-6157] synthesizing module 'multi_seven_seg_2' [/home/streylab/Doc
 	Parameter DIGITS bound to: 3'b100 
 	Parameter DIV bound to: 5'b10000 
 	Parameter DIGIT_BITS bound to: 2'b10 
-INFO: [Synth 8-6157] synthesizing module 'counter_5' [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/counter_5.v:14]
+INFO: [Synth 8-6157] synthesizing module 'counter_7' [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/counter_7.v:14]
 	Parameter SIZE bound to: 2'b10 
 	Parameter DIV bound to: 5'b10000 
 	Parameter TOP bound to: 4'b0011 
 	Parameter UP bound to: 1'b1 
 	Parameter MAX_VALUE bound to: 20'b00111111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'counter_5' (2#1) [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/counter_5.v:14]
-INFO: [Synth 8-6157] synthesizing module 'seven_seg_6' [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/seven_seg_6.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'seven_seg_6' (3#1) [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/seven_seg_6.v:7]
-INFO: [Synth 8-6157] synthesizing module 'decoder_7' [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/decoder_7.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'counter_7' (2#1) [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/counter_7.v:14]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_8' [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/seven_seg_8.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_8' (3#1) [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/seven_seg_8.v:7]
+INFO: [Synth 8-6157] synthesizing module 'decoder_9' [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/decoder_9.v:11]
 	Parameter WIDTH bound to: 2'b10 
-INFO: [Synth 8-6155] done synthesizing module 'decoder_7' (4#1) [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/decoder_7.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_9' (4#1) [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/decoder_9.v:11]
 INFO: [Synth 8-6155] done synthesizing module 'multi_seven_seg_2' (5#1) [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/multi_seven_seg_2.v:12]
 INFO: [Synth 8-6157] synthesizing module 'counter_3' [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/counter_3.v:14]
-	Parameter SIZE bound to: 4'b1110 
-	Parameter DIV bound to: 5'b11000 
-	Parameter TOP bound to: 14'b10011100001111 
+	Parameter SIZE bound to: 1'b1 
+	Parameter DIV bound to: 4'b1010 
+	Parameter TOP bound to: 1'b0 
 	Parameter UP bound to: 1'b1 
-	Parameter MAX_VALUE bound to: 38'b10011100001111111111111111111111111111 
+	Parameter MAX_VALUE bound to: 11'b01111111111 
 INFO: [Synth 8-6155] done synthesizing module 'counter_3' (6#1) [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/counter_3.v:14]
-INFO: [Synth 8-6157] synthesizing module 'bin_to_dec_4' [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/bin_to_dec_4.v:12]
-	Parameter DIGITS bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'timer_4' [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/timer_4.v:11]
+	Parameter TOP bound to: 26'b10111110101111000001111111 
+INFO: [Synth 8-6155] done synthesizing module 'timer_4' (7#1) [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/timer_4.v:11]
+INFO: [Synth 8-6157] synthesizing module 'bin_to_dec_5' [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/bin_to_dec_5.v:12]
+	Parameter DIGITS bound to: 4'b1010 
 	Parameter LEADING_ZEROS bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'bin_to_dec_4' (7#1) [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/bin_to_dec_4.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'au_top_0' (8#1) [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/au_top_0.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'bin_to_dec_5' (8#1) [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/bin_to_dec_5.v:12]
+INFO: [Synth 8-6157] synthesizing module 'count_pulses_6' [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/count_pulses_6.v:7]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_10' [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/edge_detector_10.v:12]
+	Parameter RISE bound to: 1'b1 
+	Parameter FALL bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_10' (9#1) [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/edge_detector_10.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'count_pulses_6' (10#1) [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/count_pulses_6.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'au_top_0' (11#1) [/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/au_top_0.v:7]
 WARNING: [Synth 8-3917] design au_top_0 has port led[7] driven by constant 0
 WARNING: [Synth 8-3917] design au_top_0 has port led[6] driven by constant 0
 WARNING: [Synth 8-3917] design au_top_0 has port led[5] driven by constant 0
@@ -105,7 +114,7 @@ WARNING: [Synth 8-3331] design au_top_0 has unconnected port io_dip[2]
 WARNING: [Synth 8-3331] design au_top_0 has unconnected port io_dip[1]
 WARNING: [Synth 8-3331] design au_top_0 has unconnected port io_dip[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1935.109 ; gain = 264.465 ; free physical = 119337 ; free virtual = 125240
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1935.105 ; gain = 264.465 ; free physical = 118666 ; free virtual = 124726
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -118,12 +127,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1935.109 ; gain = 264.465 ; free physical = 119331 ; free virtual = 125235
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1935.105 ; gain = 264.465 ; free physical = 118663 ; free virtual = 124723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1935.109 ; gain = 264.465 ; free physical = 119331 ; free virtual = 125235
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1935.105 ; gain = 264.465 ; free physical = 118663 ; free virtual = 124723
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1935.109 ; gain = 0.000 ; free physical = 119324 ; free virtual = 125228
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1935.105 ; gain = 0.000 ; free physical = 118657 ; free virtual = 124717
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -140,29 +149,29 @@ Parsing XDC File [/home/streylab/Desktop/fpga/alchitry-labs-1.1.5/library/compon
 Finished Parsing XDC File [/home/streylab/Desktop/fpga/alchitry-labs-1.1.5/library/components/au.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2104.859 ; gain = 0.000 ; free physical = 119239 ; free virtual = 125143
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2102.887 ; gain = 0.000 ; free physical = 118567 ; free virtual = 124626
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2104.859 ; gain = 0.000 ; free physical = 119239 ; free virtual = 125143
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2102.887 ; gain = 0.000 ; free physical = 118567 ; free virtual = 124626
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2104.859 ; gain = 434.215 ; free physical = 119313 ; free virtual = 125217
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2102.887 ; gain = 432.246 ; free physical = 118636 ; free virtual = 124696
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tftg256-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2104.859 ; gain = 434.215 ; free physical = 119313 ; free virtual = 125217
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2102.887 ; gain = 432.246 ; free physical = 118636 ; free virtual = 124696
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2104.859 ; gain = 434.215 ; free physical = 119313 ; free virtual = 125217
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2102.887 ; gain = 432.246 ; free physical = 118636 ; free virtual = 124696
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2104.859 ; gain = 434.215 ; free physical = 119305 ; free virtual = 125209
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2102.887 ; gain = 432.246 ; free physical = 118629 ; free virtual = 124690
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -175,24 +184,34 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     38 Bit       Adders := 1     
+	   3 Input     34 Bit       Adders := 9     
+	   2 Input     26 Bit       Adders := 1     
 	   2 Input     18 Bit       Adders := 1     
-	   3 Input     14 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 1     
 +---Registers : 
-	               38 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
 	               18 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input     38 Bit        Muxes := 1     
+	   2 Input     40 Bit        Muxes := 12    
+	  10 Input     34 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 9     
+	  10 Input     30 Bit        Muxes := 1     
+	  10 Input     27 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	  10 Input     24 Bit        Muxes := 1     
+	  10 Input     20 Bit        Muxes := 1     
 	   2 Input     18 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 5     
+	  10 Input     17 Bit        Muxes := 1     
 	  10 Input     14 Bit        Muxes := 1     
-	   2 Input     14 Bit        Muxes := 3     
 	  10 Input     10 Bit        Muxes := 1     
 	  10 Input      7 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
 	   9 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -204,7 +223,7 @@ Module reset_conditioner_1
 Detailed RTL Component Info : 
 +---Registers : 
 	                4 Bit    Registers := 1     
-Module counter_5 
+Module counter_7 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     18 Bit       Adders := 1     
@@ -219,23 +238,44 @@ Detailed RTL Component Info :
 Module counter_3 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     38 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
 +---Registers : 
-	               38 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     38 Bit        Muxes := 1     
-Module bin_to_dec_4 
+	               11 Bit    Registers := 1     
+Module timer_4 
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     14 Bit       Adders := 3     
+	   2 Input     26 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 5     
+	   2 Input     26 Bit        Muxes := 1     
+Module bin_to_dec_5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     34 Bit       Adders := 9     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 12    
+	  10 Input     34 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 9     
+	  10 Input     30 Bit        Muxes := 1     
+	  10 Input     27 Bit        Muxes := 1     
+	  10 Input     24 Bit        Muxes := 1     
+	  10 Input     20 Bit        Muxes := 1     
+	  10 Input     17 Bit        Muxes := 1     
 	  10 Input     14 Bit        Muxes := 1     
-	   2 Input     14 Bit        Muxes := 3     
 	  10 Input     10 Bit        Muxes := 1     
 	  10 Input      7 Bit        Muxes := 1     
 	   9 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 8     
+Module edge_detector_10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module count_pulses_6 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -305,7 +345,7 @@ WARNING: [Synth 8-3331] design au_top_0 has unconnected port io_dip[2]
 WARNING: [Synth 8-3331] design au_top_0 has unconnected port io_dip[1]
 WARNING: [Synth 8-3331] design au_top_0 has unconnected port io_dip[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2104.859 ; gain = 434.215 ; free physical = 119281 ; free virtual = 125189
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2102.887 ; gain = 432.246 ; free physical = 118588 ; free virtual = 124653
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -317,13 +357,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 2104.859 ; gain = 434.215 ; free physical = 119165 ; free virtual = 125073
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 2102.887 ; gain = 432.246 ; free physical = 118478 ; free virtual = 124542
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2104.859 ; gain = 434.215 ; free physical = 119145 ; free virtual = 125053
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 2102.887 ; gain = 432.246 ; free physical = 118476 ; free virtual = 124541
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -335,7 +375,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2104.859 ; gain = 434.215 ; free physical = 119145 ; free virtual = 125053
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 2102.887 ; gain = 432.246 ; free physical = 118473 ; free virtual = 124538
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -359,13 +399,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2104.859 ; gain = 434.215 ; free physical = 119145 ; free virtual = 125053
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 2102.887 ; gain = 432.246 ; free physical = 118473 ; free virtual = 124538
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2104.859 ; gain = 434.215 ; free physical = 119145 ; free virtual = 125053
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 2102.887 ; gain = 432.246 ; free physical = 118473 ; free virtual = 124538
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -384,25 +424,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2104.859 ; gain = 434.215 ; free physical = 119145 ; free virtual = 125053
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2102.887 ; gain = 432.246 ; free physical = 118473 ; free virtual = 124538
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2104.859 ; gain = 434.215 ; free physical = 119145 ; free virtual = 125053
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2102.887 ; gain = 432.246 ; free physical = 118473 ; free virtual = 124538
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2104.859 ; gain = 434.215 ; free physical = 119145 ; free virtual = 125053
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2102.887 ; gain = 432.246 ; free physical = 118473 ; free virtual = 124538
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2104.859 ; gain = 434.215 ; free physical = 119145 ; free virtual = 125053
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2102.887 ; gain = 432.246 ; free physical = 118473 ; free virtual = 124538
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -419,53 +459,57 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    25|
-|3     |LUT1   |     3|
-|4     |LUT2   |    88|
-|5     |LUT3   |    29|
-|6     |LUT4   |    39|
-|7     |LUT5   |    40|
-|8     |LUT6   |    90|
-|9     |FDRE   |    56|
+|2     |CARRY4 |    89|
+|3     |LUT1   |     7|
+|4     |LUT2   |   245|
+|5     |LUT3   |   227|
+|6     |LUT4   |   130|
+|7     |LUT5   |   246|
+|8     |LUT6   |   480|
+|9     |FDRE   |   122|
 |10    |FDSE   |     4|
 |11    |IBUF   |     8|
 |12    |OBUF   |    45|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+-------------+--------------------+------+
-|      |Instance     |Module              |Cells |
-+------+-------------+--------------------+------+
-|1     |top          |                    |   428|
-|2     |  btd        |bin_to_dec_4        |    44|
-|3     |  ctr        |counter_3           |   273|
-|4     |  reset_cond |reset_conditioner_1 |     5|
-|5     |  seg        |multi_seven_seg_2   |    52|
-|6     |    ctr      |counter_5           |    52|
-+------+-------------+--------------------+------+
++------+---------------+--------------------+------+
+|      |Instance       |Module              |Cells |
++------+---------------+--------------------+------+
+|1     |top            |                    |  1604|
+|2     |  cnt_pls      |count_pulses_6      |  1395|
+|3     |    ed_pulse   |edge_detector_10    |     1|
+|4     |    ed_slowclk |edge_detector_10_0  |     1|
+|5     |  pulse        |timer_4             |    68|
+|6     |  reset_cond   |reset_conditioner_1 |     5|
+|7     |  seg          |multi_seven_seg_2   |    49|
+|8     |    ctr        |counter_7           |    49|
+|9     |  slowclk      |counter_3           |    24|
++------+---------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2104.859 ; gain = 434.215 ; free physical = 119145 ; free virtual = 125053
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2102.887 ; gain = 432.246 ; free physical = 118473 ; free virtual = 124538
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 52 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2104.859 ; gain = 264.465 ; free physical = 119198 ; free virtual = 125106
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2104.859 ; gain = 434.215 ; free physical = 119198 ; free virtual = 125106
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2102.887 ; gain = 264.465 ; free physical = 118526 ; free virtual = 124590
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2102.887 ; gain = 432.246 ; free physical = 118526 ; free virtual = 124590
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2104.859 ; gain = 0.000 ; free physical = 119265 ; free virtual = 125173
-INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2102.887 ; gain = 0.000 ; free physical = 118592 ; free virtual = 124657
+INFO: [Netlist 29-17] Analyzing 89 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'au_top_0' is not ideal for floorplanning, since the cellview 'count_pulses_6' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2107.828 ; gain = 0.000 ; free physical = 119215 ; free virtual = 125123
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2119.801 ; gain = 0.000 ; free physical = 118542 ; free virtual = 124607
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+35 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 2107.828 ; gain = 633.352 ; free physical = 119358 ; free virtual = 125266
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2107.828 ; gain = 0.000 ; free physical = 119358 ; free virtual = 125266
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 2119.801 ; gain = 645.328 ; free physical = 118673 ; free virtual = 124738
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2119.801 ; gain = 0.000 ; free physical = 118673 ; free virtual = 124738
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.runs/synth_1/au_top_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file au_top_0_utilization_synth.rpt -pb au_top_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jun 29 17:04:58 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  1 21:12:11 2020...

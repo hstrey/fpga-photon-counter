@@ -1,0 +1,28 @@
+module count_pulses (
+    input clk,  // clock
+    input slowclk, //slow clock
+    input pulse, // pulses
+    output out[32]
+  ) {
+  
+  .clk(clk){
+  dff running_count[32];
+  dff count[32];
+  edge_detector ed_pulse (#RISE(1),#FALL(0));
+  edge_detector ed_slowclk (#RISE(1),#FALL(0));
+  }
+  
+  always {
+    ed_pulse.in = pulse;
+    ed_slowclk.in = slowclk;
+    if (ed_pulse.out) {
+      count.d = running_count.q;
+      running_count.d = 32b0;
+    }
+    else {
+      if (ed_slowclk.out) 
+      running_count.d = running_count.q +1;
+    }
+    out = count.q;
+  }
+}

@@ -38,18 +38,32 @@ module au_top_0 (
     .seg(M_seg_seg),
     .sel(M_seg_sel)
   );
-  wire [14-1:0] M_ctr_value;
-  counter_3 ctr (
+  wire [1-1:0] M_slowclk_value;
+  counter_3 slowclk (
     .clk(clk),
     .rst(rst),
-    .value(M_ctr_value)
+    .value(M_slowclk_value)
+  );
+  wire [1-1:0] M_pulse_out;
+  timer_4 pulse (
+    .clk(clk),
+    .rst(rst),
+    .out(M_pulse_out)
   );
   
-  wire [16-1:0] M_btd_digits;
-  reg [14-1:0] M_btd_value;
-  bin_to_dec_4 btd (
+  wire [40-1:0] M_btd_digits;
+  reg [34-1:0] M_btd_value;
+  bin_to_dec_5 btd (
     .value(M_btd_value),
     .digits(M_btd_digits)
+  );
+  
+  wire [32-1:0] M_cnt_pls_out;
+  count_pulses_6 cnt_pls (
+    .clk(clk),
+    .slowclk(M_slowclk_value),
+    .pulse(M_pulse_out),
+    .out(M_cnt_pls_out)
   );
   
   always @* begin
@@ -57,8 +71,8 @@ module au_top_0 (
     rst = M_reset_cond_out;
     led = {3'h0, io_button};
     usb_tx = usb_rx;
-    M_btd_value = M_ctr_value;
-    M_seg_values = M_btd_digits;
+    M_btd_value = M_cnt_pls_out;
+    M_seg_values = M_btd_digits[0+15-:16];
     io_seg = ~M_seg_seg;
     io_sel = ~M_seg_sel;
     io_led = 24'h000000;

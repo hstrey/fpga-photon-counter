@@ -2,8 +2,8 @@
 # Vivado v2019.2.1 (64-bit)
 # SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
 # IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
-# Start of session at: Mon Jun 29 17:04:16 2020
-# Process ID: 129309
+# Start of session at: Wed Jul  1 21:11:22 2020
+# Process ID: 868
 # Current directory: /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.runs/synth_1
 # Command line: vivado -log au_top_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source au_top_0.tcl
 # Log file: /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.runs/synth_1/au_top_0.vds

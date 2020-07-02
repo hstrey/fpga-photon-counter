@@ -6,40 +6,40 @@
 
 /*
    Parameters:
-     SIZE = 14
-     DIV = 24
-     TOP = 9999
+     SIZE = 1
+     DIV = 10
+     TOP = 0
      UP = 1
 */
 module counter_3 (
     input clk,
     input rst,
-    output reg [13:0] value
+    output reg [0:0] value
   );
   
-  localparam SIZE = 4'he;
-  localparam DIV = 5'h18;
-  localparam TOP = 14'h270f;
+  localparam SIZE = 1'h1;
+  localparam DIV = 4'ha;
+  localparam TOP = 1'h0;
   localparam UP = 1'h1;
   
   
-  reg [37:0] M_ctr_d, M_ctr_q = 1'h0;
+  reg [10:0] M_ctr_d, M_ctr_q = 1'h0;
   
-  localparam MAX_VALUE = 38'h270fffffff;
+  localparam MAX_VALUE = 11'h3ff;
   
   always @* begin
     M_ctr_d = M_ctr_q;
     
-    value = M_ctr_q[24+13-:14];
+    value = M_ctr_q[10+0-:1];
     if (1'h1) begin
       M_ctr_d = M_ctr_q + 1'h1;
-      if (1'h1 && M_ctr_q == 38'h270fffffff) begin
+      if (1'h0 && M_ctr_q == 11'h3ff) begin
         M_ctr_d = 1'h0;
       end
     end else begin
       M_ctr_d = M_ctr_q - 1'h1;
-      if (1'h1 && M_ctr_q == 1'h0) begin
-        M_ctr_d = 38'h270fffffff;
+      if (1'h0 && M_ctr_q == 1'h0) begin
+        M_ctr_d = 11'h3ff;
       end
     end
   end

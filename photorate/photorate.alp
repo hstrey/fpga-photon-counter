@@ -7,6 +7,7 @@
     <component>counter.luc</component>
     <src>multi_dec_ctr.luc</src>
     <component>decoder.luc</component>
+    <src>count_pulses.luc</src>
     <src>seven_seg.luc</src>
     <src>decimal_counter.luc</src>
     <component>reset_conditioner.luc</component>

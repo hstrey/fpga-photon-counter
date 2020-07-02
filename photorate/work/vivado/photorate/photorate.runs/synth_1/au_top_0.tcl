@@ -28,13 +28,16 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/bin_to_dec_4.v
+  /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/bin_to_dec_5.v
+  /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/count_pulses_6.v
   /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/counter_3.v
-  /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/counter_5.v
-  /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/decoder_7.v
+  /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/counter_7.v
+  /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/decoder_9.v
+  /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/edge_detector_10.v
   /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/multi_seven_seg_2.v
   /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/reset_conditioner_1.v
-  /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/seven_seg_6.v
+  /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/seven_seg_8.v
+  /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/timer_4.v
   /home/streylab/Documents/programming/fpga-photon-counter/photorate/work/vivado/photorate/photorate.srcs/sources_1/imports/verilog/au_top_0.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being

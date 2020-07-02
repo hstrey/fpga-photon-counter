@@ -20,11 +20,14 @@ module au_top (
         
     .rst(rst) {
       multi_seven_seg seg;
-      counter ctr (#SIZE(14),#DIV(24),#TOP(9999));
-      counter slowclk (#SIZE(1),#DIV(18));
+//      counter ctr (#SIZE(14),#DIV(24),#TOP(9999));
+      counter slowclk (#SIZE(1),#DIV(10));
+      timer pulse;
     }
   }
-  bin_to_dec btd (#DIGITS(4));
+  
+  bin_to_dec btd (#DIGITS(10));
+  count_pulses cnt_pls (.clk(clk),.slowclk(slowclk.value),.pulse(pulse.out));
   
   always {
     reset_cond.in = ~rst_n;   // input raw inverted reset signal
@@ -34,8 +37,8 @@ module au_top (
     
     usb_tx = usb_rx;          // loop serial port
     
-    btd.value = ctr.value;
-    seg.values = btd.digits;
+    btd.value = cnt_pls.out;
+    seg.values = btd.digits[3:0];
     
     io_seg = ~seg.seg; // connect segments to the driver
     io_sel = ~seg.sel; // connect digit select to the driver
